@@ -1,0 +1,88 @@
+/* -- Calendar Frontend -- */
+
+.srs-frontend .srs-frontend-calendar{
+    width: 175px;
+    overflow: hidden;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_header{
+    background: #DDDDDD;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_header div{
+    display: inline;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_header div a{
+    text-decoration: none;
+    color: #444;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_header .next-btn{
+    float: right;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_header .prev-btn{
+    float: left;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_day_name div{
+    display: inline;
+    width: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_day_name, .srs-header .srs-calender .res_calendar_day_numbers{
+    overflow: hidden;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_day_numbers div{
+    display: block;
+    font-size: 10px;
+    width: 25px;
+    float: left;
+    text-align: center;
+    height: 18px;
+    line-height: 16px;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_day_numbers div a{
+    text-decoration: none;
+}
+
+.srs-frontend .srs-frontend-calendar .res_calendar_day_numbers div.active-date{
+    background: #DDDDDD;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+
+.srs-frontend label{
+    width: 110px;
+    float: left;
+}
+
+.srs-frontend .srs-frontend-container form > div{
+    margin: 10px 0;
+}
+
+.srs-frontend .srs-frontend-container form .srs-frontend-people{
+    margin-bottom: 20px;
+}
+
+.srs-frontend .error-messages{
+    color: red;
+    font-size: 12px;
+}
+
+.srs-frontend .empty{
+    color: #ddd !important;
+}

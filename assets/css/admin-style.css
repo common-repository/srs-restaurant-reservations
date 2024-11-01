@@ -1,0 +1,541 @@
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error{
+    border-color: red!important;
+    background: rgb(255, 239, 239)!important;
+
+    border-color: #FD9D9D!important;
+    background: rgb(255, 247, 247)!important;
+}
+
+#srs-main{
+	max-width: 100%;
+	padding: 20px;
+}
+.srs-container{
+	margin: 0 auto;
+	background: #EBEBEB;
+	background: #EBEBEB;
+    max-width: 1040px;
+    border-radius: 5px;
+    padding: 20px;
+	
+}
+
+.srs-header{
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-left: 325px;
+}
+
+.srs-header > div{
+    display: block;
+    float: left;
+}
+
+.srs-header .srs-selected-date{
+    width: 150px;
+    margin-left: -150px;
+}
+
+.srs-header .srs-selected-date > div{
+    text-align: center;
+}
+
+.srs-header .srs-selected-date .selected-date-title{
+    font-weight: 700;
+    margin-bottom: 10px;
+    /*background: #DDD;*/
+    padding: 3px 5px;
+}
+.srs-header .srs-selected-date .total-reservations-title{
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.srs-header .srs-selected-date .total-reservation{
+    font-size: 20px;
+}
+.srs-header .srs-selected-date .Date{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.srs-header .srs-selected-date .DayOfWeek{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.srs-header .srs-selected-date .DayOfWeek > div:nth-child(2){
+    padding: 0 5px;
+    color: #989797;
+}
+
+.DayOfWeek div {
+    display: inline-block;
+}
+
+.srs-header .srs-graph{
+    background: #DDD;
+    border-radius: 5px;
+    width: 100%;
+    height: 140px;
+    float: right;
+}
+
+/* -- Calendar Backend */
+.srs-header .srs-calender{
+    width: 175px;
+    margin-left: -325px;
+}
+
+.srs-header .srs-calender .res_calendar_header{
+    background: #DDDDDD;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.srs-header .srs-calender .res_calendar_header div{
+    display: inline;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.srs-header .srs-calender .res_calendar_header div a{
+    text-decoration: none;
+    color: #444;
+}
+
+.srs-header .srs-calender .res_calendar_header .next-btn{
+    float: right;
+}
+
+.srs-header .srs-calender .res_calendar_header .prev-btn{
+    float: left;
+}
+
+.srs-header .srs-calender .res_calendar_day_name div{
+    display: inline;
+    width: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+
+}
+
+.srs-header .srs-calender .res_calendar_day_name, .srs-header .srs-calender .res_calendar_day_numbers{
+    overflow: hidden;
+}
+
+.srs-header .srs-calender .res_calendar_day_numbers div{
+    display: block;
+    font-size: 10px;
+    width: 25px;
+    float: left;
+    text-align: center;
+    height: 18px;
+    line-height: 16px;
+}
+
+.srs-header .srs-calender .res_calendar_day_numbers div a{
+    text-decoration: none;
+}
+
+.srs-header .srs-calender .res_calendar_day_numbers div.active-date{
+    background: #DDDDDD;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #B2B2B2;
+}
+
+.action-message{
+    margin-bottom: 10px;
+}
+.srs-make-reservation .top, .srs-list-reservations .top, .srs-reservations-settings-page .top{
+    background: #DDD;
+    padding: 1px 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.srs-make-reservation-form{
+    overflow: auto;
+    padding: 20px 10px;
+}
+
+.srs-make-reservation-form .left{
+    float: left;
+    width: 35%;
+}
+
+.srs-make-reservation-form .right{
+    float: right;
+    width: 60%;
+}
+
+.srs-make-reservation-form .form-row label{
+    float: left;
+    text-align: right;
+    width: 40%;
+    top: 3px;
+    position: relative;
+}
+
+.srs-make-reservation-form .form-row input[type="text"] {
+    height: 22px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.srs-make-reservation-form .form-row select, .srs-reservations-settings select{
+    height: 22px;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 12px;
+}
+
+.srs-make-reservation-form .form-row .field-div{
+    float: left;
+    text-align: left;
+    width: 60%;
+    padding-left: 20px;
+    max-width: 190px;
+}
+
+.srs-make-reservation-form .form-row{
+    margin-bottom: 1px;
+    overflow: hidden;
+    min-height: 30px;
+
+}
+
+.srs-make-reservation-form .form-row #make-reservation-house{
+    width: 25%;
+}
+
+.srs-make-reservation-form .form-row #make-reservation-street{
+    width: 69%;
+    float: right;
+    margin-right: 0;
+}
+
+.srs-make-reservation-form .form-row .email-confirmation{
+    margin-top: 5px;
+}
+
+.srs-make-reservation-form .form-row .make-reservation-employee-code{
+    width: 83px;
+    float: left;
+}
+
+.srs-make-reservation-form .form-row .employee-code-confirmation{
+    width: 88px;
+    float: left;
+    text-align: right;
+}
+
+.srs-make-reservation-form .form-row .employee-code-confirmation label{
+    width: 60px;
+}
+
+.srs-make-reservation-form .form-row .employee-code-confirmation div{
+    float: left;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+
+.srs-make-reservation-form .form-row-create-button{
+    margin-top: 30px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    height: 30px;
+
+}
+
+.srs-make-reservation-form .form-row-create-button label{
+    float: left;
+    text-align: right;
+    width: 35%;
+    top: 3px;
+    position: relative;
+}
+
+.srs-make-reservation-form .form-row-create-button .field-div{
+    float: right;
+    text-align: left;
+    width: 65%;
+    padding-left: 20px;
+}
+
+#make-reservation-form-save{
+    margin-left: 34px;
+}
+
+.form-row.form-row-comments{
+    height: 80px;
+}
+
+.form-row.form-row-comments textarea{
+    height: 60px;
+}
+
+.srs-list-reservations-header{
+    background: #D2D2D2;
+    /*border-radius: 0 0 5px 5px;*/
+    padding: 10px;
+}
+
+.srs-list-reservations-header div{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.srs-list-reservations-header .date{
+    width: 15%;
+}
+
+.srs-list-reservations-header .time{
+    width: 12%;
+}
+
+.srs-list-reservations-header .name{
+    width: 25%;
+}
+
+.srs-list-reservations-header .people{
+    width: 5%;
+}
+
+.srs-list-reservations-header .table{
+    width: 5%;
+}
+
+.srs-list-reservations-header .comment{
+    width: 20%;
+}
+
+.srs-list-reservations-header .admin{
+    width: 15%;
+}
+
+.srs-list-reservations-body{
+    background: #E2E2E2;
+    border-radius: 0 0 5px 5px;
+    padding: 10px 5px;
+}
+
+.srs-list-reservations-body .srs-list-reservations-row {
+    border-bottom: 1px solid #CBCBCB;
+    padding: 1px 5px;
+    /*border-radius: 5px;*/
+}
+
+.srs-list-reservations-body .srs-list-reservations-row:first-child{
+    /*border: 0;*/
+}
+
+.srs-list-reservations-body .srs-list-reservations-row:last-child{
+    border: 0;
+}
+
+.srs-list-reservations-body .srs-list-reservations-row:nth-child(even) {
+    background: #DBDBDB;
+}
+
+.srs-list-reservations-body .srs-list-reservations-row div{
+    display: inline-block;
+
+}
+
+.srs-list-reservations-body .date{
+    width: 15%;
+}
+
+.srs-list-reservations-body .time{
+    width: 12%;
+}
+
+.srs-list-reservations-body .name{
+    width: 25%;
+}
+
+.srs-list-reservations-body .people{
+    width: 5%;
+}
+
+.srs-list-reservations-body .table{
+    width: 5%;
+}
+
+.srs-list-reservations-body .comment{
+    width: 20%;
+}
+
+.srs-list-reservations-body .admin{
+    width: 15%;
+}
+
+.srs-error-messages{
+    background: antiquewhite;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.srs-error-message{
+    background: #FDB4BF;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.srs-list-reservations .filters div:first-child{
+    margin-right: 10px;
+}
+.srs-list-reservations .filters div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* SRS RESERVATIONS SETTINGS PAGE*/
+
+.srs-reservations-settings-page .form-row{
+    margin: 5px 10px;
+    border-bottom: 1px solid #E2DBDB;
+    padding-bottom: 5px;
+}
+
+.srs-reservations-settings-page .form-row label{
+    font-weight: bold;
+    /* margin-left: 3px; */
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding-right: 25px;
+    margin-top: 6px;
+}
+
+.srs-reservations-settings-page .form-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.srs-reservations-settings-page .label-div{
+    margin-top: 5px;
+    width: 35%;
+    float: left;
+}
+
+.srs-reservations-settings-page .field-div{
+    margin-top: 5px;
+    width: 65%;
+    float: left;
+}
+
+.srs-reservations-settings-page .field-div input{
+    border-radius: 3px;
+}
+
+.srs-reservations-settings-page .field-div input[type="checkbox"]{
+    margin: 7px 2px 5px 0;
+}
+
+.srs-reservations-settings-page .field-div.checkbox span{
+    margin-right: 10px;
+}
+
+.srs-reservations-settings-page .field-div span, .srs-reservations-settings-page .field-div div{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.srs-reservations-settings-page .submit-button{
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.srs-reservations-settings-page .settings-subheading{
+    padding: 10px;
+}
+
+/* SRS MAIN MENU */
+.srs-main-menu{
+    padding: 10px 10px 4px 20px;
+    margin: 0 auto;
+    max-width: 1040px;
+    border-bottom: 5px solid #0074A2;
+}
+
+.srs-main-menu a{
+    background: #2EA2CC;
+    padding: 6px 10px 4px 10px;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    top: -1px;
+}
+
+.srs-main-menu a.active{
+    background: #0074A2;
+    padding: 8px 10px 8px 10px;
+    top: -4px;
+    position: relative;
+}
+
+.srs-main-menu a.not-active:hover{
+    background: #35B9E8;
+    top: -2px;
+}
+
+@media (max-width: 767px) {
+    .srs-header {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .srs-header > div {
+        display: inline-block;
+        float: none;
+        text-align: left;
+    }
+    .srs-header .srs-calender{
+        margin-left: 0;
+    }
+    .srs-header .srs-selected-date{
+        margin-left: 0;
+    }
+    .srs-header .srs-graph{
+        margin-top: 20px;
+    }
+
+    .srs-make-reservation-form .right, .srs-make-reservation-form .left {
+        float: none;
+        width: 100%;
+    }
+
+    .srs-make-reservation-form .form-row {
+        min-height: 40px;
+    }
+    .srs-make-reservation-form .form-row .field-div.radio{
+        margin-top: 5px;
+    }
+    .srs-make-reservation-form .form-row label{
+        font-size: 16px;
+        top: 6px;
+    }
+    .srs-make-reservation-form .form-row input[type="text"] {
+        height: inherit;
+        font-size: 14px;
+        /*width: 200px;*/
+    }
+
+}
